@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,700");
 
 * {
   box-sizing: border-box;
@@ -7,7 +7,7 @@
 body {
   padding: 0;
   margin: 0;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
 }
 
 main {
@@ -258,16 +258,23 @@ form {
 
 .pagination a {
   text-decoration: none;
-  color: #00695c;
-  padding: 0.5rem;
+  color: #fff;
+  padding: 0.5rem 1rem;
   border: 1px solid #00695c;
   margin: 0 1rem;
+  background-color: #00695c;
+  border-radius: 5px;
 }
 
 .pagination a:hover,
 .pagination a:active {
-  background: #00695c;
-  color: white;
+  background: #fff;
+  color: #00695c;
+}
+
+.pagination a.disabled {
+  background-color: #07c9b2;
+  pointer-events: none;
 }
 
 @media (min-width: 768px) {
